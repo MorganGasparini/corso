@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinnovo Patente</title>
+    <script>
+        function controllaRinnovo() {
+            let num = parseInt(prompt("Inserisci anno di nascita: "));
+            let x = 2024 - num;
+
+            if (x > 18 && x < 90) {
+                console.log("Rinnovo accettato");
+                let pat = parseInt(prompt("Inserisci anno di scadenza patente: "));
+                let pat10 = pat + 10;
+                console.log("La nuova data di scadenza della patente sarà " + pat10);
+                alert("La nuova data di scadenza della patente sarà " + pat10);
+            } else {
+                console.log("Rinnovo non accettato");
+                alert("Rinnovo non accettato");
+            }
+
+
+        }
+    </script>
+</head>
+<style>
+    body{
+       background-color: orchid;
+        
+    }
+</style>
+<body>
+    <h1>Verifica Rinnovo Patente</h1>
+    <button onclick="controllaRinnovo()">Esegui</button>
+</body>
+</html>

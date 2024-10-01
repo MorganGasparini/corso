@@ -1,0 +1,19 @@
+Creare un programma rinnovoPatente.
+Il programma chiede all’utente di inserire la data di nascita, e la data di scadenza della patente. Se l’utente ha più di 18 anni e meno di 90 anni il programma stampa “rinnovo accettato e la data di scadenza maggiorate di 10 anni” altrimenti stampa rinnovo non possibile
+
+
+let num = parseInt(prompt("inserisci anno di nascita: "));
+let x = 2024-num
+if (x > 18 && x < 90) {
+    console.log("Rinnovo accettato");
+    let pat = parseInt(prompt("inserisci anno di scadenza patente: "));
+    pat10= pat+10
+    console.log("la nuova data di scadenza della patente sarà "+pat10);
+} 
+
+else {
+    console.log("Rinnovo non accettato");
+}
+
+
+

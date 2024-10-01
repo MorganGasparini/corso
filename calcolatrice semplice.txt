@@ -1,0 +1,12 @@
+let num1 = prompt("Scrivi un primo numero: ");
+let num2 = prompt("Scrivi un secondo numero: ");
+ 
+console.log("La somma dei due numeri " + (parseFloat(num1) + parseFloat(num2)))
+
+console.log("La differenza è " + (parseFloat(num1) - parseFloat(num2)))
+
+console.log("La moltiplicazione tra i due numeri è " + (parseFloat(num1) 	* parseFloat(num2)))
+
+console.log("La divisione tra i due numeri è " + (parseFloat(num1) 	/ parseFloat(num2)))
+
+console.log("Il resto tra i due numeri è " + (parseFloat(num1) 	% parseFloat(num2)))
